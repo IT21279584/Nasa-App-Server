@@ -21,7 +21,7 @@ public class UserController {
     @Autowired
     private PasswordEncoder passwordEncoder;
     
-    @CrossOrigin(origins = "https://spaceexplorer.vercel.app")
+
     @PostMapping("/register")
     public User register(@RequestBody User user){
         String username  = user.getUsername();
